@@ -1,0 +1,88 @@
+.menu-bar{display: none;}
+.menu-nav{
+    width: 40%;
+    float: left;
+}
+.menu-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-nav ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #00424c;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid rgba(0, 66, 76, 0.5);
+}
+.menu-nav ul li a:hover{
+    background-color: #00424c;
+    color: #ffffff;
+}
+.menu-nav ul li .select{background-color: #878787;}
+
+.content-info{
+    width: 60%;
+    float: left;
+    padding: 0;
+}
+.content-info h2{
+    padding: 2.5%;
+    margin: 0;
+}
+.content-info img{
+    width: 95%;
+    padding: 0% 2.5%;
+}
+.content-info p{
+    font-size: 20px;
+    margin: 0;
+    padding: 0% 2.5%;
+}
+.page-content main{
+    display: inline-block;
+}
+@media screen and (max-width:900px) {
+    .nav-bar{
+        width: 100%;
+    }
+    .menu-bar{
+        display: block;        
+        background-color: #00424c;
+        color: #ffffff;
+    }
+    .menu-bar:hover ~ .menu-nav{
+        transform: translateX(100%);
+    }
+    .menu-bar .bt-menu{
+        display: block;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 10px 20px;
+    }
+    .menu-bar i{
+        float: right;
+        font-size: 30px;
+    }
+    .menu-nav{
+        width: 80%;
+        height: 100%;
+        right: 100%;
+        background-color: #dcdcdc;
+        position: absolute;
+        margin: 0;
+        overflow: scroll;
+        display: block;
+        transition: 1s ease-in-out 0.5s;
+    }
+    .menu-nav ul li{
+        display: block;
+    }
+    .menu-nav ul li a{
+        display: block;
+    }
+    .content-info{
+        width: 100%;
+    }
+}
